@@ -22,7 +22,7 @@ class translator:
 
 def process_question(text : str):
 
-  source_lang = detectlanguage.detect(text)
+  source_lang = detectlanguage.simple_detect(text)
   resp = translator.translate(text=text, target_lang='en', source_lang=source_lang)
   return resp, source_lang
 
@@ -31,10 +31,10 @@ def process_answer(text : str, source_lang):
   return resp
 
 
-  def process(QUESTION: str):
-  USER_QUERY, SL = process_question(QUESTION) #Translate the original question into english and store the source lang
-  RESPONSE = query(USER_QUERY) #Asking th chatbot question
-  ORIGINAL_RESPONSE = process_answer(RESPONSE, SL)
-  return ORIGINAL_RESPONSE
+def process(QUESTION: str):
+    USER_QUERY, SL = process_question(QUESTION) #Translate the original question into english and store the source lang
+    RESPONSE = query(USER_QUERY) #Asking th chatbot question
+    ORIGINAL_RESPONSE = process_answer(RESPONSE, SL)
+    return ORIGINAL_RESPONSE
 
 process("Donne mois de l'information sur RURA?")
