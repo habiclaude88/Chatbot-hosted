@@ -1,4 +1,5 @@
 import detectlanguage
+from detectlanguage import simple_detect
 detectlanguage.configuration.api_key = "61d5f7102a99c4bbe12f57176b066f10"
 
 

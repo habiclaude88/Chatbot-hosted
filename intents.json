@@ -977,19 +977,20 @@
       ]
     },
     {
-      "tag": "Rwandarevenue",
+      "tag": "Greetings",
       "patterns": [
-        "Guide me to Rwandarevenue?",
-        "Where do you get Rwandarevenue?",
-        "What is the link of Rwandarevenue?",
-        "How do you get Rwandarevenue?",
-        "Who is in charge of Rwandarevenue?",
-        "I want a link of Rwandarevenue",
-        "Give me the link of Rwandarevenue",
-        "Bring me the link of Rwandarevenue"
+        "Hello",
+        "Hi",
+        "Hey",
+        "How are you?",
+        "Whats'up?",
+        "Anyone there?"
       ],
       "responses": [
-        "You can use this link https://www.instagram.com/rwandarevenue/ for more information"
+        "Hello, what can I help you?",
+        "Hi, do you have any problem?",
+        "Hey, do you need help?",
+        "I am doing great!!!"
       ]
     },
     {
