@@ -1,6 +1,7 @@
 import detectlanguage
 from detectlanguage import simple_detect
 detectlanguage.configuration.api_key = "61d5f7102a99c4bbe12f57176b066f10"
+from chat import get_response
 
 
 import requests
@@ -34,7 +35,7 @@ def process_answer(text : str, source_lang):
 
 def process(QUESTION: str):
     USER_QUERY, SL = process_question(QUESTION) #Translate the original question into english and store the source lang
-    RESPONSE = query(USER_QUERY) #Asking th chatbot question
+    RESPONSE = get_response(USER_QUERY) #Asking th chatbot question
     ORIGINAL_RESPONSE = process_answer(RESPONSE, SL)
     return ORIGINAL_RESPONSE
 
