@@ -4,5 +4,5 @@ nltk==3.5
 numpy==1.24.1
 requests==2.24.0
 torch==1.13.0
-numpy==1.18.5
+~umpy==1.18.5
 gunicorn
