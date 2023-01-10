@@ -31,7 +31,7 @@ body {
 .chatbox__support {
     display: flex;
     flex-direction: column;
-    background: #eee;
+    background: rgb(20, 20, 20);
     width: 300px;
     height: 350px;
     z-index: -123456;
@@ -124,12 +124,12 @@ body {
 
 .chatbox__heading--header {
     font-size: 1.2rem;
-    color: white;
+    color: rgb(226, 221, 221);
 }
 
 .chatbox__description--header {
     font-size: .9rem;
-    color: white;
+    color: rgb(19, 71, 182);
 }
 
 /* Messages */
